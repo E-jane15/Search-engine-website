@@ -16,6 +16,7 @@ const response = await axios.get(url);
 const data = response.data;
 
 const results = data.results;
+
 results.map((result) => {
    const image = document.createElement("img");
    image.src = result.urls.small;
@@ -26,6 +27,8 @@ results.map((result) => {
    imageLink.appendChild(image);
    searchResult.appendChild(imageLink);
 })
+  showMoreBtn.style.display = "block";
+  
 }
 
 searchForm.addEventListener("submit",(e) =>{
