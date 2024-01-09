@@ -24,6 +24,7 @@ results.map((result) => {
    imageLink.target = "_blank";   //opens link in new tab
 
    imageLink.appendChild(image);
+   searchResult.appendChild(imageLink);
 })
 }
 
