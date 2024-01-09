@@ -13,7 +13,7 @@ async function searchImages(){
     keyword = searchBox.value;
     const url = 'https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}';
 const response = await axios.get(url);
-const data = await response.json();
+const data = response.data;
 
 const results = data.results;
 results.map((result) => {
