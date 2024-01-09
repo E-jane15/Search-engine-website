@@ -21,7 +21,9 @@ results.map((result) => {
    image.src = result.urls.small;
    const imageLink =document.createElement("a");
    imageLink.href = result.links.html;
-   imageLink.target = "_blank"
+   imageLink.target = "_blank";   //opens link in new tab
+
+   imageLink.appendChild(image);
 })
 }
 
